@@ -43,10 +43,23 @@ body {
     margin: 5px auto;
 }
 
+.content{
+    margin: 20px;
+    height: 80vh;
+    box-sizing: border-box;
+}
+
+#contactForm{
+    width: 60%;
+    margin: 20px auto;
+    padding: 10px;
+}
+
 .footer {
-    font-size: 9px;
+    position: relative;
+    font-size: 12px;
     font-weight: bold;
     text-align: center;
     padding: 20px;
-    margin-top: 20px;
+    margin-top: 50px;
 }
