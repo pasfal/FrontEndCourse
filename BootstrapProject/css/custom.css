@@ -1,19 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
-body
-{
+body {
     font-family: 'Roboto', Helvetica, sans-serif;
 }
 
-.card
-{
-    padding: 5px;
-    margin: 5px;
+.container {
+    width: 90%;
+    margin: 10px auto;
 }
 
-.card-img-top
-{
+.navbar {
+    border-radius: 5px;
+}
+
+.hero-banner {
+    background-image: url('../imgs/hero-bg.jpg');
+    border-radius: 5px;
+    margin-top: 2px;
+    height: 300px;
+}
+
+.hero-banner h1 {
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.hero-banner-par{
+    margin-top: 15px;
+    padding: 10px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.card {
+    padding: 5px;
+    margin: 10px;
+}
+
+.card-img-top {
     width: 100px;
     height: 100px;
     margin: 5px auto;
+}
+
+.footer {
+    font-size: 9px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
 }
