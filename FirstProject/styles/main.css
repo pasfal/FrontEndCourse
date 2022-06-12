@@ -1,0 +1,76 @@
+html, body
+{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.container 
+{
+    width: 80%;
+    margin: 10px auto;
+}
+
+a:link
+{
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.logo
+{
+    width: 100%;
+    height:auto;
+}
+
+.mainMenu 
+{
+    padding: 5px;
+    background-color: lightblue;
+    text-align:center;
+}
+
+.content
+{
+    margin: 10px;
+    height: 80vh;
+    box-sizing: border-box;
+}
+
+#contactForm
+{
+    width: 50%;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.lblCF
+{
+    width: 150px;
+    display: block;
+    float: left;
+}
+
+.txtBoxCF
+{
+    width: 50%;
+}
+
+#messageCF
+{
+    width: 50%;
+    height: 80px;
+}
+
+.footer
+{
+    font-size: 9px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.strong
+{
+    font-weight: bold;
+}
