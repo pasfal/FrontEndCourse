@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/*consente di creare gruppi di selettori e proprietà CSS
+ripetibili all'interno del nostro fogli di stile su cui possiamo applicare dei
+parametri arbitrari.*/
+.icon-mail {
+  background-image: url("/icons/mail.svg");
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.icon-logo {
+  background-image: url("/icons/logo.svg");
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+div {
+  height: 480px;
+  width: 640px;
+  position: relative;
+  overflow: hidden;
+}
+div:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: transparent url("http://sandropaganotti.com/wp-content/goodies/misc/cornovaglia.png") no-repeat 50% 50%;
+  background-size: 100%;
+  transform-origin: 90% 50%;
+  transition: transform 0.5s;
+}
+div:hover:after {
+  transform: scale(1.8);
+}
+
+/*# sourceMappingURL=mixin_example.css.map */

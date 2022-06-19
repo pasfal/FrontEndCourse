@@ -1,0 +1,46 @@
+/*consente di creare gruppi di selettori e proprietà CSS
+ripetibili all'interno del nostro fogli di stile su cui possiamo applicare dei
+parametri arbitrari.*/
+@mixin corner-icon($name, $top-or-bottom, $left-or-right) {
+    .icon-#{$name} {
+      background-image: url("/icons/#{$name}.svg");
+      position: absolute;
+      #{$top-or-bottom}: 0;
+      #{$left-or-right}: 0;
+    }
+  }
+  
+  @include corner-icon("mail", top, right);
+  @include corner-icon("logo", top, left);
+
+  @mixin zoomIn($imageUrl, $zoomOrigin, $zoomFactor){
+    position: relative;
+    overflow: hidden;
+    &:after{ //& prende il valore div, perché lo chiamo all'interno di un div (vedi sotto)
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0; 
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: transparent url($imageUrl) no-repeat 50% 50%;
+      background-size: 100%;
+      transform-origin: $zoomOrigin;
+      transition: transform 0.5s;
+    }
+    &:hover:after{
+      transform: scale($zoomFactor);
+    }
+  }
+  
+  
+  div{
+    height: 480px;
+    width: 640px;
+    @include zoomIn(
+      'http://sandropaganotti.com/wp-content/goodies/misc/cornovaglia.png',
+      90% 50%,
+      1.8
+    );
+  }
