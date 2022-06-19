@@ -1,0 +1,14 @@
+.btn {
+  background: black;
+}
+.btn__label {
+  color: white;
+}
+.btn.btn--red {
+  background: red;
+}
+.btn.btn--blue {
+  background: blue;
+}
+
+/*# sourceMappingURL=btn_example.css.map */

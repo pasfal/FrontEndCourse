@@ -1,0 +1,18 @@
+.btn{
+    background:black;
+
+    /*& è l'operatore di concatenazione. Concatena l'elemento padre al resto */
+    &__label{
+        color: white;
+    }
+
+    /* #{} è una string interpolation e viene usata nel caso in cui va inserito un testo dinamico
+      (il risultato di un'espressione ad esempio) in uno fisso */
+    &#{&}--red {
+        background: red;
+    }
+
+    &#{&}--blue {
+        background: blue;
+    }
+}
