@@ -1,0 +1,23 @@
+.box, .mybox {
+  border: 1px solid #000;
+  background-color: green;
+}
+
+.mybox {
+  font-size: 10px;
+}
+
+.mysecondbox, .myfirstbox {
+  border: 1px solid #000;
+  background-color: orange;
+}
+
+.myfirstbox {
+  font-size: 10px;
+}
+
+.mysecondbox {
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=extend_example.css.map */

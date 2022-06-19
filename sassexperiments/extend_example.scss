@@ -1,0 +1,26 @@
+.box {
+    border: 1px solid #000;
+    background-color: green;
+} 
+    
+.mybox {
+    @extend .box; //estende la classe box
+    font-size: 10px;
+}
+
+//La keyword % è un placeholder che serve a definire classi che saranno soltanto estese
+// e non compariranno nel codice
+%box2 {
+    border: 1px solid #000;
+    background-color: orange;
+}
+
+.myfirstbox{
+    @extend %box2;
+    font-size: 10px;
+}
+
+.mysecondbox{
+    @extend %box2;
+    font-size: 20px;
+}
