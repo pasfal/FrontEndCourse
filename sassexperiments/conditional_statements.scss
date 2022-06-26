@@ -1,0 +1,35 @@
+$template: dark;
+// template colors
+$bg-dark: #000;
+$fg-dark: #999;
+$bg-bright: #eeee99;
+$fg-bright: #eeee99;
+
+@mixin colors {
+    @if $template == dark {
+        background-color: $bg-dark;
+        color: $fg-bright;
+    }
+
+    @if $template == bright { //in alterantiva, si può usare @else
+        background-color: $bg-bright;
+        color: $fg-dark;
+    }
+}
+
+//If con condizione (if ternario, se la condizione è vera, fai l'istruzione più a sx, altrimenti quella più a dx)
+@mixin highlight( $condition )
+{
+    $color: if( $condition, rgba(255, 0, 0, 0.2), rgba(0, 255, 0, 0.3) );
+    div.highlight {
+            background-color: $color;
+        }
+}
+
+
+
+body 
+{
+    @include colors;
+    @include highlight( false );
+}
