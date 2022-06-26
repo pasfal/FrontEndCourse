@@ -1,0 +1,47 @@
+.home-icon {
+  padding-left: 16px;
+  background-image: url(icons/home.png) center left norepeat;
+  background-color: #ffd5d5;
+  border: 1px solid #ab0a0a;
+}
+
+.contact-icon {
+  padding-left: 16px;
+  background-image: url(icons/contact.png) center left norepeat;
+  background-color: #cdffbe;
+  border: 1px solid #1c6605;
+}
+
+.links-icon {
+  padding-left: 16px;
+  background-image: url(icons/links.png) center left norepeat;
+  background-color: #bdc5ff;
+  border: 1px solid #081787;
+}
+
+.priority-0 {
+  -webkit-order: 0;
+  order: 0;
+}
+
+.priority-1 {
+  -webkit-order: 1;
+  order: 1;
+}
+
+.priority-2 {
+  -webkit-order: 2;
+  order: 2;
+}
+
+.priority-3 {
+  -webkit-order: 3;
+  order: 3;
+}
+
+.priority-4 {
+  -webkit-order: 4;
+  order: 4;
+}
+
+/*# sourceMappingURL=iteration_statements.css.map */

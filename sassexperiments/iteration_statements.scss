@@ -1,0 +1,29 @@
+@mixin priority($levels) {
+    @for $i from 1 through $levels //through considera da 1 a $levels, to esclude $levels
+    {
+        .priority-#{$i - 1} {
+            -webkit-order: #{$i - 1};
+            order: #{$i - 1};
+            }
+    
+    }
+
+}
+
+//per ogni terna di valori nella lista, viene generata una classe interpolando con la notazione #{} il nome della classe e il nome dell'icona
+@each $icon, $bg-color, $border-color in
+        (home, #ffd5d5, #ab0a0a),
+        (contact, #cdffbe, #1c6605),
+        (links, #bdc5ff, #081787) 
+        {
+            .#{$icon}-icon
+            {
+                padding-left: 16px;
+                background-image: url(icons/#{$icon}.png) center left norepeat;
+                background-color: $bg-color;
+                border: 1px solid $border-color;
+            }
+
+        }
+
+@include priority(5);
