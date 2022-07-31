@@ -1,0 +1,19 @@
+.contatore .contatore-number {
+  font-size: 60px;
+}
+.contatore .contatore-button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contatore .contatore-button-container .contatore-button {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+.contatore .contatore-button-container .contatore-button:active {
+  background-color: #CCC;
+}
+
+/*# sourceMappingURL=experiments_react_book.css.map */
